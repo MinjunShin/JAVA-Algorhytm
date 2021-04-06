@@ -51,7 +51,6 @@ public class BinarySearch {
 		else
 			System.out.println(idx + " 요소에 값이 있다.");
 		
-
 	}
 
 }
