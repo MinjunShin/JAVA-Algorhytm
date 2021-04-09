@@ -9,23 +9,30 @@ public class Ex_4_ShowBinaryDetail {
 		int idxL = 0;
 		int idxR = n-1;
 		
-		System.out.printf("%3s", "|");
+		System.out.printf("%4s", "|");
 		for(int i = 0; i < n ; i++)
-			System.out.printf("%3d", i);
+			System.out.printf("%4d", i);
 		System.out.println();
 		for(int i = 0; i < n+1 ; i++)
-			System.out.print("---");
+			System.out.print("----");
 		System.out.println();
 				
 		
 		do {
 			int idxC = (idxL + idxR) / 2;
-			System.out.printf("%3s", "|");
-			System.out.printf(String.format("%%%ds<-\n", (idxL * 3)+1), "");
+			System.out.print("   |");
+			if (idxL != idxC)
+				System.out.printf(String.format("%%%ds<-%%%ds+", (idxL * 4) + 1, (idxC - idxL) * 4), "", "");
+			else
+				System.out.printf(String.format("%%%ds<-+", idxC * 4 + 1), "");
+			if (idxC != idxR)
+				System.out.printf(String.format("%%%ds->\n", (idxR - idxC) * 4 - 2), "");
+			else
+				System.out.println("->");
 				
-			System.out.printf("%2d%s", idxC, "|");
+			System.out.printf("%3d%s", idxC, "|");
 			for(int i = 0; i < n ; i++)
-				System.out.printf("%3d", a[i]);
+				System.out.printf("%4d", a[i]);
 			System.out.println();
 				
 			if(a[idxC] == key)
