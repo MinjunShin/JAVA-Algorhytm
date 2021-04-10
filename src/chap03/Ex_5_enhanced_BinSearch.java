@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 class Ex_5_enhanced_BinSearch {
 
-	static int BinSearch(int[] a, int n, int key) {
+	static int binSearch(int[] a, int n, int key) {
 		
 		int idxL = 0;
 		int idxR = n-1;
@@ -13,7 +13,7 @@ class Ex_5_enhanced_BinSearch {
 			int idxC = (idxL + idxR)/2;
 			
 			if(a[idxC] == key) {
-				for (; idxC > idxL; idxC--) // key와 같은 맨 앞의 요소를 찾습니다
+				for ( ; idxC > idxL; idxC--) // key와 같은 맨 앞의 요소를 찾습니다
 					if (a[idxC - 1] < key)
 						break;
 				return idxC; // 검색성공
@@ -55,7 +55,7 @@ class Ex_5_enhanced_BinSearch {
 		System.out.print("검색할 값 : ");
 		int key = stdIn.nextInt();
 		
-		int idx = BinSearch(x, num, key);
+		int idx = binSearch(x, num, key);
 		
 		if(idx == -1)
 			System.out.println("그 값의 요소가 없다.");
