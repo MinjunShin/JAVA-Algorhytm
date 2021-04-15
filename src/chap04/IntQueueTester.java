@@ -8,7 +8,7 @@ class IntQueueTester {
     IntQueue s = new IntQueue(64);
     
     while(true) {
-		System.out.println("현재 데이터 수 : " + s.size() + " / " + s.capacity());
+		System.out.println("현재 데이터 수 : " + s.size() + " / " );
 		System.out.print("(1) 푸시 (2)팝 (3)피크 (4)덤프 (0)종료");
 		int menu = stdIn.nextInt();
 		if(menu == 0) break;
