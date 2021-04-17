@@ -1,7 +1,7 @@
 package chap04;
 
 public class IntQueue {
-	 private int max;
+	  private int max;
 	  private int front;
 	  private int rear;
 	  private int num;
@@ -19,7 +19,7 @@ public class IntQueue {
 	    num = front = rear = 0;
 	    max = capacity;
 	    try {
-	    que = new int[max]; // Å¥ º»Ã¼¿ë ¹è¿­À» »ý¼º
+	    que = new int[max]; // Å¥ ï¿½ï¿½Ã¼ï¿½ï¿½ ï¿½è¿­ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 	    } catch (OutOfMemoryError e) {
 	      max = 0;
 	    }
@@ -49,14 +49,14 @@ public class IntQueue {
 	    
 	  }
 	  
-	  //Å¥¿¡¼­ µ¥ÀÌÅÍ ÇÇÅ©°ªÀ» ¹ÝÈ¯
+	  //Å¥ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Å©ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½È¯
 	  public int peek() throws EmptyQueueException {
 	    if (num <= 0)
 	      throw new EmptyQueueException();
 	    return que[front];  
 	  }
 	  
-	  //Å¥¿¡¼­ x¸¦ °Ë»öÇÏ¿© ÀÎµ¦½º(Ã£Áö ¸øÇÏ¸é -1)¸¦ ¹ÝÈ¯.
+	  //Å¥ï¿½ï¿½ï¿½ï¿½ xï¿½ï¿½ ï¿½Ë»ï¿½ï¿½Ï¿ï¿½ ï¿½Îµï¿½ï¿½ï¿½(Ã£ï¿½ï¿½ ï¿½ï¿½ï¿½Ï¸ï¿½ -1)ï¿½ï¿½ ï¿½ï¿½È¯.
 	  public int indexOf (int x) {
 	    for(int i = 0; i < num ; i++){
 	      int idx = (i + front) % max;
@@ -71,7 +71,7 @@ public class IntQueue {
 	    num = front = rear = 0;
 	  }
 	  
-	  public int capacty() {
+	  public int capa() {
 	    return max;
 	  }
 	  

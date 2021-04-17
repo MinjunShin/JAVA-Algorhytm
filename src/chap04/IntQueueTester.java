@@ -8,38 +8,38 @@ class IntQueueTester {
     IntQueue s = new IntQueue(64);
     
     while(true) {
-		System.out.println("ÇöÀç µ¥ÀÌÅÍ ¼ö : " + s.size() + " / " );
-		System.out.print("(1) Çª½Ã (2)ÆË (3)ÇÇÅ© (4)´ıÇÁ (0)Á¾·á");
+		System.out.println("í˜„ì¬ ë°ì´í„° ìˆ˜ : " + s.size() + " / " + s.capa());
+		System.out.print("(1) ì¸í (2) ë””í (3)í”¼í¬ (4)ë¤í”„ (0)ì¢…ë£Œ");
 		int menu = stdIn.nextInt();
 		if(menu == 0) break;
 		
 		int x;
 		switch(menu) {
 		 case 1 :
-			System.out.println("µ¥ÀÌÅÍ ÀÔ·Â : ");
+			System.out.println("ë°ì´í„° ì…ë ¥ : ");
 			x = stdIn.nextInt();
 			try {
 				s.enque(x);
 			} catch (IntQueue.OverflowQueueException e) {
-				System.out.println("Å¥°¡ °¡µæ Ã¡½À´Ï´Ù.");
+				System.out.println("íê°€ ê°€ë“ ì°¼ìŠµë‹ˆë‹¤.");
 			}
 			break;
 			
 		 case 2 :
 			 try {
 				 x = s.deque();
-				 System.out.println("dequeÇÑ µ¥ÀÌÅÍ´Â " + x + " ÀÔ´Ï´Ù.");
+				 System.out.println("dequeí•œ ë°ì´í„°ëŠ” " + x + " ì…ë‹ˆë‹¤.");
 			 } catch (IntQueue.EmptyQueueException e) {
-				 System.out.println("Å¥°¡ ºñ¾îÀÖ½À´Ï´Ù.");
+				 System.out.println("íê°€ ë¹„ì–´ìˆìŠµë‹ˆë‹¤.");
 			 }
 			 break;
 			 
 		  case 3 :
 			  try {
 				  x = s.peek();
-				  System.out.println("peekÇÑ µ¥ÀÌÅÍ´Â "+ x + " ÀÔ´Ï´Ù.");
+				  System.out.println("peekí•œ ë°ì´í„°ëŠ” "+ x + " ì…ë‹ˆë‹¤.");
 			  } catch (IntQueue.EmptyQueueException e) {
-				  System.out.println("Å¥°¡ ºñ¾îÀÖ½À´Ï´Ù.");
+				  System.out.println("íê°€ ë¹„ì–´ìˆìŠµë‹ˆë‹¤.");
 			  }
 			  break;
 			  
