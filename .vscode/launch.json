@@ -1,0 +1,252 @@
+{
+    // IntelliSense를 사용하여 가능한 특성에 대해 알아보세요.
+    // 기존 특성에 대한 설명을 보려면 가리킵니다.
+    // 자세한 내용을 보려면 https://go.microsoft.com/fwlink/?linkid=830387을(를) 방문하세요.
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch CountInt",
+            "request": "launch",
+            "mainClass": "chap01.CountInt",
+            "projectName": "Algorithm"
+        },
+        {
+            "type": "java",
+            "name": "Launch Digits",
+            "request": "launch",
+            "mainClass": "chap01.Digits",
+            "projectName": "Algorithm"
+        },
+        {
+            "type": "java",
+            "name": "Launch JudgeSign",
+            "request": "launch",
+            "mainClass": "chap01.JudgeSign",
+            "projectName": "Algorithm"
+        },
+        {
+            "type": "java",
+            "name": "Launch Median",
+            "request": "launch",
+            "mainClass": "chap01.Median",
+            "projectName": "Algorithm"
+        },
+        {
+            "type": "java",
+            "name": "Launch MinusAB",
+            "request": "launch",
+            "mainClass": "chap01.MinusAB",
+            "projectName": "Algorithm"
+        },
+        {
+            "type": "java",
+            "name": "Launch Multi99Table",
+            "request": "launch",
+            "mainClass": "chap01.Multi99Table",
+            "projectName": "Algorithm"
+        },
+        {
+            "type": "java",
+            "name": "Launch Pyramid",
+            "request": "launch",
+            "mainClass": "chap01.Pyramid",
+            "projectName": "Algorithm"
+        },
+        {
+            "type": "java",
+            "name": "Launch SquarePrint_1_14",
+            "request": "launch",
+            "mainClass": "chap01.SquarePrint_1_14",
+            "projectName": "Algorithm"
+        },
+        {
+            "type": "java",
+            "name": "Launch SumGauss_1_8",
+            "request": "launch",
+            "mainClass": "chap01.SumGauss_1_8",
+            "projectName": "Algorithm"
+        },
+        {
+            "type": "java",
+            "name": "Launch SumWhile",
+            "request": "launch",
+            "mainClass": "chap01.SumWhile",
+            "projectName": "Algorithm"
+        },
+        {
+            "type": "java",
+            "name": "Launch sumOfex_1_9",
+            "request": "launch",
+            "mainClass": "chap01.sumOfex_1_9",
+            "projectName": "Algorithm"
+        },
+        {
+            "type": "java",
+            "name": "Launch ArrayEqual",
+            "request": "launch",
+            "mainClass": "chap02.ArrayEqual",
+            "projectName": "Algorithm"
+        },
+        {
+            "type": "java",
+            "name": "Launch CardConvRev",
+            "request": "launch",
+            "mainClass": "chap02.CardConvRev",
+            "projectName": "Algorithm"
+        },
+        {
+            "type": "java",
+            "name": "Launch MaxOfArrayRand",
+            "request": "launch",
+            "mainClass": "chap02.MaxOfArrayRand",
+            "projectName": "Algorithm"
+        },
+        {
+            "type": "java",
+            "name": "Launch MaxofArray",
+            "request": "launch",
+            "mainClass": "chap02.MaxofArray",
+            "projectName": "Algorithm"
+        },
+        {
+            "type": "java",
+            "name": "Launch PhyscDataEx",
+            "request": "launch",
+            "mainClass": "chap02.PhyscDataEx",
+            "projectName": "Algorithm"
+        },
+        {
+            "type": "java",
+            "name": "Launch ReverseArray",
+            "request": "launch",
+            "mainClass": "chap02.ReverseArray",
+            "projectName": "Algorithm"
+        },
+        {
+            "type": "java",
+            "name": "Launch YMD_02_11",
+            "request": "launch",
+            "mainClass": "chap02.YMD_02_11",
+            "projectName": "Algorithm"
+        },
+        {
+            "type": "java",
+            "name": "Launch YMDprint",
+            "request": "launch",
+            "mainClass": "chap02.YMDprint",
+            "projectName": "Algorithm"
+        },
+        {
+            "type": "java",
+            "name": "Launch BinSearch_ComparatorEx",
+            "request": "launch",
+            "mainClass": "chap03.BinSearch_ComparatorEx",
+            "projectName": "Algorithm"
+        },
+        {
+            "type": "java",
+            "name": "Launch BinarySearch",
+            "request": "launch",
+            "mainClass": "chap03.BinarySearch",
+            "projectName": "Algorithm"
+        },
+        {
+            "type": "java",
+            "name": "Launch BinarySearchTester",
+            "request": "launch",
+            "mainClass": "chap03.BinarySearchTester",
+            "projectName": "Algorithm"
+        },
+        {
+            "type": "java",
+            "name": "Launch Ex_2_LinearScan",
+            "request": "launch",
+            "mainClass": "chap03.Ex_2_LinearScan",
+            "projectName": "Algorithm"
+        },
+        {
+            "type": "java",
+            "name": "Launch Ex_3_SeqSearchSenFor",
+            "request": "launch",
+            "mainClass": "chap03.Ex_3_SeqSearchSenFor",
+            "projectName": "Algorithm"
+        },
+        {
+            "type": "java",
+            "name": "Launch Ex_3_binSearch",
+            "request": "launch",
+            "mainClass": "chap03.Ex_3_binSearch",
+            "projectName": "Algorithm"
+        },
+        {
+            "type": "java",
+            "name": "Launch Ex_4_ShowBinaryDetail",
+            "request": "launch",
+            "mainClass": "chap03.Ex_4_ShowBinaryDetail",
+            "projectName": "Algorithm"
+        },
+        {
+            "type": "java",
+            "name": "Launch Ex_5_enhanced_BinSearch",
+            "request": "launch",
+            "mainClass": "chap03.Ex_5_enhanced_BinSearch",
+            "projectName": "Algorithm"
+        },
+        {
+            "type": "java",
+            "name": "Launch IdTester",
+            "request": "launch",
+            "mainClass": "chap03.IdTester",
+            "projectName": "Algorithm"
+        },
+        {
+            "type": "java",
+            "name": "Launch SeqSearch",
+            "request": "launch",
+            "mainClass": "chap03.SeqSearch",
+            "projectName": "Algorithm"
+        },
+        {
+            "type": "java",
+            "name": "Launch SeqSearchFor",
+            "request": "launch",
+            "mainClass": "chap03.SeqSearchFor",
+            "projectName": "Algorithm"
+        },
+        {
+            "type": "java",
+            "name": "Launch SeqSearchSen",
+            "request": "launch",
+            "mainClass": "chap03.SeqSearchSen",
+            "projectName": "Algorithm"
+        },
+        {
+            "type": "java",
+            "name": "Launch StringBinarySearch",
+            "request": "launch",
+            "mainClass": "chap03.StringBinarySearch",
+            "projectName": "Algorithm"
+        },
+        {
+            "type": "java",
+            "name": "Launch IntQueueTester",
+            "request": "launch",
+            "mainClass": "chap04.IntQueueTester",
+            "projectName": "Algorithm"
+        },
+        {
+            "type": "java",
+            "name": "Launch IntStackTest",
+            "request": "launch",
+            "mainClass": "chap04.IntStackTest",
+            "projectName": "Algorithm"
+        }
+    ]
+}
