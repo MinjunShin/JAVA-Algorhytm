@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Ex_1_factorial_without_recursive",
+            "request": "launch",
+            "mainClass": "chap05.Ex_1_factorial_without_recursive",
+            "projectName": "Algorithm"
+        },
+        {
+            "type": "java",
             "name": "Launch EuclidGCD",
             "request": "launch",
             "mainClass": "chap05.EuclidGCD",
