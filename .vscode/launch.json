@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch LastNElements",
+            "request": "launch",
+            "mainClass": "chap04.LastNElements",
+            "projectName": "Algorithm"
+        },
+        {
+            "type": "java",
             "name": "Launch Current File",
             "request": "launch",
             "mainClass": "${file}"
