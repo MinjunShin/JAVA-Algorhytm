@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch EuclidGCD",
+            "request": "launch",
+            "mainClass": "chap05.EuclidGCD",
+            "projectName": "Algorithm"
+        },
+        {
+            "type": "java",
+            "name": "Launch Factorial",
+            "request": "launch",
+            "mainClass": "chap05.Factorial",
+            "projectName": "Algorithm"
+        },
+        {
+            "type": "java",
             "name": "Launch LastNElements",
             "request": "launch",
             "mainClass": "chap04.LastNElements",
