@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Ex_3_gcdArray",
+            "request": "launch",
+            "mainClass": "chap05.Ex_3_gcdArray",
+            "projectName": "Algorithm"
+        },
+        {
+            "type": "java",
+            "name": "Launch Ex_2_gcd_without_recursive",
+            "request": "launch",
+            "mainClass": "chap05.Ex_2_gcd_without_recursive",
+            "projectName": "Algorithm"
+        },
+        {
+            "type": "java",
             "name": "Launch Ex_1_factorial_without_recursive",
             "request": "launch",
             "mainClass": "chap05.Ex_1_factorial_without_recursive",
