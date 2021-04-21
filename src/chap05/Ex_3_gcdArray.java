@@ -1,44 +1,43 @@
 package chap05;
-
 import java.util.Scanner;
+// 배열의 모든 요소의 최대 공약수를 구합니다.
 
-public class Ex_3_gcdArray {
+class GCDArray_05_03 {
+	// 정수 x, y의 최대 공약수를 비재귀적으로 구하여 반환
+	static int gcd(int x, int y) {
+		while (y != 0) {
+			int temp = y;
+			y = x % y;
+			x = temp;
+		}
+		return (x);
+	}
 
-    static int gcdArray (int[] x) throws ArrayIndexOutOfBoundsException{
+	// 요솟수 n인 배열 a의 모든 요소의 최대 공약수를 구합니다.
+	static int gcdArray(int a[], int start, int no) {
+		if (no == 1)
+			return a[start];
+		else if (no == 2)
+			return gcd(a[start], a[start + 1]);
+		else
+			return gcd(a[start], gcdArray(a, start + 1, no - 1));
+	}
 
+	public static void main(String[] args) {
+		Scanner stdIn = new Scanner(System.in);
+		System.out.print("정수 몇 개의 최대 공약수를 구할까요?：");
+		int num;
+		do {
+			num = stdIn.nextInt();
+		} while (num <= 1);
 
-            int a1 = x[0];
-            int a2;
+		int[] x = new int[num]; // 길이 num인 배열
 
-            for(int i = 0 ; i < x.length-1 ; i++) {
-                int comp = a1;                
-                
-                a2 = x[i+1];
+		for (int i = 0; i < num; i++) {
+			System.out.print("x[" + i + "]：");
+			x[i] = stdIn.nextInt();
+		}
 
-                while(a2 != 0) {
-                    int t = a2;
-                    a2 = comp % a2;
-                    comp = t;            
-                } 
-                a1 = comp;
-            }
-
-        return a1;
-    }
-
-    public static void main(String[] args) {
-        Scanner stdIn = new Scanner(System.in);
-        System.out.println("배열의 최대 공약수를 구한다."); 
-        System.out.print("배열의 크기 : "); int cap = stdIn.nextInt();
-        int[] arr = new int[cap];
-
-        for(int i = 0 ; i < cap ; i++) {
-            System.out.print("요소 입력 : "); int x = stdIn.nextInt();
-            arr[i] = x;
-        }    
-        
-        gcdArray(arr);
-
-        System.out.println("배열의 최대 공약수는 : " + gcdArray(arr));
-    }
+		System.out.println("최대 공약수는 " + gcdArray(x, 0, num) + "입니다.");
+	}
 }

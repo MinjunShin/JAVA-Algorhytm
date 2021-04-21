@@ -1,29 +1,29 @@
 package chap04;
 
 public class IntStack {
-	private int max; // ½ºÅÃ ¿ë·®
-	private int ptr; // ½ºÅÃ Æ÷ÀÎÅÍ
-	private int[] stk; // ½ºÅÃ º»Ã¼
+	private int max; 
+	private int ptr; 
+	private int[] stk; 
 	
-	//½ÇÇà ½Ã ¿¹¿Ü : ½ºÅÃÀÌ ºñ¾îÀÖ´Â °æ¿ì
+
 	public class EmptyIntStackException extends RuntimeException {
 		public EmptyIntStackException() {
-			System.out.println("EmptyIntStackException ¿¡·¯ ¹ß»ý");
+			System.out.println("EmptyIntStackException ï¿½ï¿½ï¿½ï¿½ ï¿½ß»ï¿½");
 		}
 	}
 
-	// ½ÇÇà ½Ã ¿¹¿Ü : ½ºÅÃÀÌ °¡µæ Âù °æ¿ì
+
 	public class OverflowIntStackException extends RuntimeException {
 		public OverflowIntStackException() {}
 	}
 	
-	//»ý¼ºÀÚ
+
 	public IntStack(int capacity) {
 		ptr = 0;
 		max = capacity;
 		try {
-			stk = new int [max]; // ½ºÅÃ º»Ã¼¿ë ¹è¿­ »ý¼º			
-		} catch(OutOfMemoryError e) { // »ý¼ºÇÒ ¼ö ¾øÀ½
+			stk = new int [max];			
+		} catch(OutOfMemoryError e) {
 			max = 0;
 		}
 	}
@@ -54,12 +54,12 @@ public class IntStack {
 		return -1;
 	}
 	
-	//½ºÅÃÀ» ºñ¿ò
+
 	public void clear() {
 		ptr = 0;
 	}
 	
-	//½ºÅÃÀÇ ¿ë·® ¹ÝÈ¯
+
 	public int capacity() {
 		return max;
 	}
@@ -78,7 +78,7 @@ public class IntStack {
 	
 	public void dump() {
 		if(ptr <= 0)
-			System.out.println("½ºÅÃÀÌ ºñ¾îÀÖ½À´Ï´Ù.");
+			System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ö½ï¿½ï¿½Ï´ï¿½.");
 		else {
 			for(int i = stk[0] ; i < ptr ; i++)
 				System.out.print(stk[i] + " ");

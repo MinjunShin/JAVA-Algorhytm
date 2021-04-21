@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch RecurX2",
+            "request": "launch",
+            "mainClass": "chap05.RecurX2",
+            "projectName": "Algorithm"
+        },
+        {
+            "type": "java",
+            "name": "Launch Recur",
+            "request": "launch",
+            "mainClass": "chap05.Recur",
+            "projectName": "Algorithm"
+        },
+        {
+            "type": "java",
+            "name": "Launch GCDArray_05_03",
+            "request": "launch",
+            "mainClass": "chap05.GCDArray_05_03",
+            "projectName": "Algorithm"
+        },
+        {
+            "type": "java",
             "name": "Launch Ex_3_gcdArray",
             "request": "launch",
             "mainClass": "chap05.Ex_3_gcdArray",
