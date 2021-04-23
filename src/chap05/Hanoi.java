@@ -23,6 +23,8 @@ public class Hanoi {
 		System.out.println("원반 개수 :") ;
 		int n = stdIn.nextInt();
 		
+		System.out.println("원반 개수를 입력하세요.");
+		
 		move(n , 1 , 3);
 	}
 }
