@@ -19,7 +19,7 @@ class QueenBB {
             if(flag[j] == false) { 
                 pos[i] = j; // j행에 퀸을 배치한다.
                 if(i == 7)
-                    print();
+                    print(); 
                 else {
                     flag[j] = true;
                     set(i + 1);

@@ -18,7 +18,7 @@ public class QueenB {
             else
                 set(i+1);
         }
-    }
+     }
 
     public static void main(String[] args) {
         set(0);

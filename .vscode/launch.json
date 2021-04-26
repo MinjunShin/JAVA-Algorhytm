@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Q10171_cat",
+            "request": "launch",
+            "mainClass": "Baekjoon.Q10171_cat",
+            "projectName": "Algorithm"
+        },
+        {
+            "type": "java",
+            "name": "Launch Q2557_hello_world",
+            "request": "launch",
+            "mainClass": "Baekjoon.Q2557_hello_world",
+            "projectName": "Algorithm"
+        },
+        {
+            "type": "java",
+            "name": "Launch QueenB",
+            "request": "launch",
+            "mainClass": "chap05.QueenB",
+            "projectName": "Algorithm"
+        },
+        {
+            "type": "java",
             "name": "Launch EightQueen",
             "request": "launch",
             "mainClass": "chap05.EightQueen",
