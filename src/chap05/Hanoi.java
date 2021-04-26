@@ -7,25 +7,20 @@ public class Hanoi {
 	if(no > 1) 
 		move (no-1, x, 6-x-y);
 	
-	System.out.println("¿ø¹İ[" + no + "]À» " + x + "±âµÕ¿¡¼­" + y + "±âµÕÀ¸·Î ¿Å±è");
+	System.out.println("ì›ë°˜[" + no + "]ì„ " + x + "ê¸°ë‘¥ì—ì„œ" + y + "ê¸°ë‘¥ìœ¼ë¡œ ì˜®ê¹€");
 	
 	if(no > 1)
-		move (no-1, 6-x-y , y);
-	
-	
+		move (no-1, 6-x-y , y);	
 	}
 	
 	public static void main(String[] args) {
 		
 		Scanner stdIn = new Scanner(System.in);
 		
-		System.out.println("ÇÏ³ëÀÌÀÇ Å¾");
-		System.out.println("¿ø¹İ °³¼ö :") ;
+		System.out.println("í•˜ë…¸ì´ì˜ íƒ‘");
+		System.out.println("ì›ë°˜ ê°œìˆ˜ :") ;
 		int n = stdIn.nextInt();
-		
-		System.out.println("¿ø¹İ °³¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä.");
-		int m = stdIn.nextInt();
-		
+
 		move(n , 1 , 3);
 	}
 }

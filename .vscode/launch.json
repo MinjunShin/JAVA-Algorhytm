@@ -6,6 +6,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch EightQueen",
+            "request": "launch",
+            "mainClass": "chap05.EightQueen",
+            "projectName": "Algorithm"
+        },
+        {
+            "type": "java",
+            "name": "Launch QueenBB",
+            "request": "launch",
+            "mainClass": "chap05.QueenBB",
+            "projectName": "Algorithm"
+        },
+        {
+            "type": "java",
+            "name": "Launch QueenB",
+            "request": "launch",
+            "mainClass": "chap01.QueenB",
+            "projectName": "Algorithm"
+        },
+        {
+            "type": "java",
+            "name": "Launch Hanoi",
+            "request": "launch",
+            "mainClass": "chap05.Hanoi",
+            "projectName": "Algorithm"
+        },
+        {
+            "type": "java",
             "name": "Launch RecurX2",
             "request": "launch",
             "mainClass": "chap05.RecurX2",
