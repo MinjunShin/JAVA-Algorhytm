@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch BubbleLeftSort",
+            "request": "launch",
+            "mainClass": "chap06.BubbleLeftSort",
+            "projectName": "Algorithm"
+        },
+        {
+            "type": "java",
+            "name": "Launch BubbleSort",
+            "request": "launch",
+            "mainClass": "chap06.BubbleSort",
+            "projectName": "Algorithm"
+        },
+        {
+            "type": "java",
             "name": "Launch Q10171_cat",
             "request": "launch",
             "mainClass": "Baekjoon.Q10171_cat",
