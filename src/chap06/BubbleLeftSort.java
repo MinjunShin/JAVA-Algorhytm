@@ -3,28 +3,54 @@ package chap06;
 import java.util.Scanner;
 
 public class BubbleLeftSort {
+	
+	static int countComp = 0;
+	static int countChange = 0;
     static void swap(int[]a , int idx1, int idx2) {
         int t = a[idx1];
         a[idx1] = a[idx2];
         a[idx2] = t;
+        countChange++;
     }
 
     static void bubbleSort(int[]a, int n) {
-        // íŒ¨ìŠ¤ë¥¼ êµ¬í˜„
-        for(int i = n ; i > 0 ; i--)
-            for(int j = 0 ; j < i-1 ; j++)
-                if(a[j] > a[j+1])
-                    swap(a, j+1, j);
+        // ÆÐ½º¸¦ ±¸Çö  	
+        for(int i = 0 ; i < n-1 ; i++) {
+        	System.out.println("ÆÐ½º" + (i+1) + " : ");
+        	
+            for(int j = n-1 ; j > i ; j--) {
+            	
+                if(a[j] < a[j-1]) {
+	            	for(int k = 0 ; k < j ; k++)
+	            		System.out.printf("%2d", a[k]);
+	            	System.out.print("+");
+	            	for(int k = j; k <n ; k++)
+	            		System.out.printf("%2d", a[k]);	            	
+	            	System.out.println();	            		
+	            	countChange++;
+                    swap(a, j-1, j);
+                    continue;
+                }
+                
+                else
+	            	for(int k = 0 ; k < j ; k++)
+	            		System.out.printf("%2d", a[k]);
+	            	System.out.print("-");	            	
+	            	for(int k = j; k <n ; k++)
+	            		System.out.printf("%2d", a[k]);
+	            	System.out.println();
+            }
+        }
     }
 
 
     public static void main(String[] args) {
         Scanner stdIn = new Scanner(System.in);
-        System.out.print("ë°°ì—´ ìš”ì†Œ ê°¯ìˆ˜ë¥¼ ìž…ë ¥í•˜ì„¸ìš”. :");
+        System.out.print("¹è¿­ ¿ä¼Ò °¹¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä. :");
         int nx = stdIn.nextInt();
         int[] x = new int [nx];
 
-        System.out.println("ë°°ì—´ ìš”ì†Œë¥¼ ìž…ë ¥í•˜ì„¸ìš”.");
+        System.out.println("¹è¿­ ¿ä¼Ò¸¦ ÀÔ·ÂÇÏ¼¼¿ä.");
         for(int i = 0; i < nx ; i++) {
             System.out.print("a[" + i + "] : ");
             x[i] = stdIn.nextInt();
@@ -32,9 +58,9 @@ public class BubbleLeftSort {
 
         bubbleSort(x, nx);
 
-        System.out.println("ë²„ë¸” ì •ë ¬ ê²°ê³¼ : ");
+        System.out.println("¹öºí Á¤·Ä °á°ú : ");
 
         for(int i = 0 ; i < nx ; i++)
-            System.out.println("x["+ i +"] : " + x[i]); 
+            System.out.print(x[i] + " "); 
     }
 }
