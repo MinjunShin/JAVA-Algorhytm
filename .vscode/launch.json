@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch BubbleSortV3",
+            "request": "launch",
+            "mainClass": "chap06.BubbleSortV3",
+            "projectName": "Algorithm"
+        },
+        {
+            "type": "java",
+            "name": "Launch Ex_2_DetailBubbleSort",
+            "request": "launch",
+            "mainClass": "chap06.Ex_2_DetailBubbleSort",
+            "projectName": "Algorithm"
+        },
+        {
+            "type": "java",
             "name": "Launch BubbleLeftSort",
             "request": "launch",
             "mainClass": "chap06.BubbleLeftSort",

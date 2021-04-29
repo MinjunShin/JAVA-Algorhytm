@@ -9,32 +9,44 @@ public class Ex_2_DetailBubbleSort {
 	        a[idx2] = t;
 	    }
 
-	    static void bubbleSort(int[]a, int n) {
-	        // ÆÐ½º¸¦ ±¸Çö
-	        for(int i = n ; i > 0 ; i--)
-	            for(int j = 0 ; j < i-1 ; j++)
-	                if(a[j] > a[j+1])
-	                    swap(a, j+1, j);
-	    }
-
-
-	    public static void main(String[] args) {
-	        Scanner stdIn = new Scanner(System.in);
-	        System.out.print("¹è¿­ ¿ä¼Ò °¹¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä. :");
-	        int nx = stdIn.nextInt();
-	        int[] x = new int [nx];
-
-	        System.out.println("¹è¿­ ¿ä¼Ò¸¦ ÀÔ·ÂÇÏ¼¼¿ä.");
-	        for(int i = 0; i < nx ; i++) {
-	            System.out.print("a[" + i + "] : ");
-	            x[i] = stdIn.nextInt();
-	        }
-
-	        bubbleSort(x, nx);
-
-	        System.out.println("¹öºí Á¤·Ä °á°ú : ");
-
-	        for(int i = 0 ; i < nx ; i++)
-	            System.out.println("x["+ i +"] : " + x[i]); 
-	    }
+		static void bubbleSort(int[] a, int n) {
+			int ccnt = 0; // ë¹„êµíšŸìˆ˜
+			int scnt = 0; // êµí™˜íšŸìˆ˜
+	
+			for (int i = 0; i < n - 1; i++) {
+				System.out.printf("íŒ¨ìŠ¤%dï¼š\n", i + 1);
+				for (int j = n - 1; j > i; j--) {
+					for (int m = 0; m < n - 1; m++)
+						System.out.printf("%3d %c", a[m], (m != j - 1) ? ' ' : (a[j - 1] > a[j]) ? '+' : '-');
+					System.out.printf("%3d\n", a[n - 1]);
+	
+					ccnt++;
+					if (a[j - 1] > a[j]) {
+						scnt++;
+						swap(a, j - 1, j);
+					}
+				}
+				for (int m = 0; m < n; m++)
+					System.out.printf("%3d  ", a[m]);
+				System.out.println();
+			}
+			System.out.println("ë¹„êµë¥¼ " + ccnt + "íšŒ í–ˆìŠµë‹ˆë‹¤.");
+			System.out.println("êµí™˜ë¥¼ " + scnt + "íšŒ í–ˆìŠµë‹ˆë‹¤.");
+		}
+	
+		public static void main(String[] args) {
+			Scanner stdIn = new Scanner(System.in);
+	
+			System.out.println("ë‹¨ìˆœêµí™˜ì •ë ¬  (ë²„ë¸”ì •ë ¬)");
+			System.out.print("ìš”ì†Ÿìˆ˜ï¼š");
+			int nx = stdIn.nextInt();
+			int[] x = new int[nx];
+	
+			for (int i = 0; i < nx; i++) {
+				System.out.print("x[" + i + "]ï¼š");
+				x[i] = stdIn.nextInt();
+			}
+	
+			bubbleSort(x, nx); // ë°°ì—´ xë¥¼ ë‹¨ìˆœêµí™˜ì •ë ¬
+		}
 	}
