@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Ex_7_Enhanced_InsertionSort",
+            "request": "launch",
+            "mainClass": "chap06.Ex_7_Enhanced_InsertionSort",
+            "projectName": "Algorithm"
+        },
+        {
+            "type": "java",
+            "name": "Launch SelectionSort",
+            "request": "launch",
+            "mainClass": "chap06.SelectionSort",
+            "projectName": "Algorithm"
+        },
+        {
+            "type": "java",
             "name": "Launch Ex_6_Detail_SelectionSort",
             "request": "launch",
             "mainClass": "chap06.Ex_6_Detail_SelectionSort",
