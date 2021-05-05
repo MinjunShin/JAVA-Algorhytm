@@ -4,6 +4,18 @@ import java.util.Scanner;
 
 public class Ex_7_Enhanced_InsertionSort {
 
+    static void insertionSort(int[] a, int n) {
+		for (int i = 2; i < n; i++) {
+			int tmp = a[0] = a[i];
+			int j = i;
+			for (; a[j - 1] > tmp; j--)
+				a[j] = a[j - 1];
+			if (j > 0)
+				a[j] = tmp;
+		}
+	}
+
+
     static void insertSortV2(int[] a, int n) {
 
         for (int i = 0; i < n; i++) {
