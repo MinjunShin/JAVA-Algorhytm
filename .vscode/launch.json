@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Ex_8_BinSearch_InsertionSort",
+            "request": "launch",
+            "mainClass": "chap06.Ex_8_BinSearch_InsertionSort",
+            "projectName": "Algorithm"
+        },
+        {
+            "type": "java",
             "name": "Launch Ex_7_Enhanced_InsertionSort",
             "request": "launch",
             "mainClass": "chap06.Ex_7_Enhanced_InsertionSort",
