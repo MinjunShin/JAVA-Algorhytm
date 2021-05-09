@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch QuickSort",
+            "request": "launch",
+            "mainClass": "chap06.QuickSort",
+            "projectName": "Algorithm"
+        },
+        {
+            "type": "java",
             "name": "Launch ShellSort2",
             "request": "launch",
             "mainClass": "chap06.ShellSort2",
