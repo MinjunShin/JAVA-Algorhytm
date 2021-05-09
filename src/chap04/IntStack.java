@@ -78,9 +78,9 @@ public class IntStack {
 	
 	public void dump() {
 		if(ptr <= 0)
-			System.out.println("������ ����ֽ��ϴ�.");
+			System.out.println("스택이 비어있습니다.");
 		else {
-			for(int i = stk[0] ; i < ptr ; i++)
+			for(int i = 0 ; i < ptr ; i++)
 				System.out.print(stk[i] + " ");
 			System.out.println();
 		}

@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch QuickSort_withoutRecur",
+            "request": "launch",
+            "mainClass": "chap06.QuickSort_withoutRecur",
+            "projectName": "Algorithm"
+        },
+        {
+            "type": "java",
+            "name": "Launch QuickSortDetail",
+            "request": "launch",
+            "mainClass": "chap06.QuickSortDetail",
+            "projectName": "Algorithm"
+        },
+        {
+            "type": "java",
             "name": "Launch QuickSort",
             "request": "launch",
             "mainClass": "chap06.QuickSort",
