@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch MergaeArray",
+            "request": "launch",
+            "mainClass": "chap06.MergaeArray",
+            "projectName": "Algorithm"
+        },
+        {
+            "type": "java",
             "name": "Launch QuickSort_withoutRecur",
             "request": "launch",
             "mainClass": "chap06.QuickSort_withoutRecur",
